@@ -11,10 +11,10 @@ This is a ready to use ExpressJs server template with a Postgres database
 3. Start the web server using the `npm start` command. The app will be served at <http://localhost:8000/>. To run this app using nodemon use the command: `npm run local`
 
 ## Routes
-- The home route (`http://localhost:8000/`) will display a text on the browser with the tittle of this template app
+- The home route <http://localhost:8000/> will display a text on the browser with the tittle of this template app
 
 !["Screenshot of main page"](./docs/home-route.PNG)
 
-- The debug route (`http://localhost:8000/debug`) will display a list of all emails saved in the database
+- The debug route <http://localhost:8000/debug> will display a list of all emails saved in the database
 
 !["Screenshot of main page"](./docs/debug-route.PNG)
