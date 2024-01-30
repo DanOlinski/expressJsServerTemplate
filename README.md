@@ -2,8 +2,8 @@
 This is a ready to use ExpressJs server template with a Postgres database
 
 ## Create the DB
-1. Start postgres with the command `startpostgres` (make sure you have postgres installed in the device chosen to run this app)
-2. Create a database: from your terminal run the command `psql` then `CREATE DATABASE template_db;`. If you with to use a deferent name for your database go to the file .env and change the database to whatever you like.
+1. Start postgres with the command `startpostgres` or `sudo -i -u postgres` (make sure you have postgres installed in the device chosen to run this app)
+2. Create a database: from your terminal run the command `psql` then `CREATE DATABASE template_db;`. If you want to use a deferent name for your database go to the file .env and change the database to whatever you like. Also in the .env file you can change the postgreSQL password to match what your postgreSQL is currently, as well as the postgreSQL user name.
 
 ## Setup
 1. Install server dependencies using the `npm install` command.
