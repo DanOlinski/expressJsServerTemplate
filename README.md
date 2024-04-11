@@ -1,5 +1,5 @@
 # About
-This is a ready to use ExpressJs server template with a Postgres database
+A ready to use ExpressJs server template with a Postgres database. This backend server can be used to add a database to any application, making the production of fullstack apps more straight forward and less time consuming. Setting it up is easy due to great documentation and thorough testing.
 
 ## Create the DB
 1. Start postgres with the command `startpostgres` or `sudo -i -u postgres` (make sure you have postgres installed in the device chosen to run this app)
