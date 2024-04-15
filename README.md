@@ -1,6 +1,16 @@
 # About
 A ready to use ExpressJs server template with a Postgres database. This backend server can be used to add a database to any application, making the production of fullstack apps more straight forward and less time consuming. Setting it up is easy due to great documentation and thorough testing.
 
+##Dependencies
+- axios: ^1.4.0
+- chalk: ^2.4.2
+- dotenv: ^2.0.0
+- ejs: ^3.1.9
+- express: ^4.17.1
+- morgan": ^1.9.1
+- pg: ^8.5.0
+- nodemon: ^3.0.1
+
 ## Create the DB
 1. Start postgres with the command `startpostgres` or `sudo -i -u postgres` (make sure you have postgres installed in the device chosen to run this app)
 2. Create a database: from your terminal run the command `psql` then `CREATE DATABASE template_db;`. If you want to use a deferent name for your database go to the file .env and change the database to whatever you like. Also in the .env file you can change the postgreSQL password to match what your postgreSQL is currently, as well as the postgreSQL user name.
