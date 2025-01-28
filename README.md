@@ -12,8 +12,8 @@ A ready to use ExpressJs server template with a Postgres database. This backend 
 - nodemon: ^3.0.1
 
 ## Create the DB
-1. Start postgres with the command `startpostgres` or `sudo -i -u postgres` (make sure you have postgres installed in the device chosen to run this app)
-2. Create a database: from your terminal run the command `psql` then `CREATE DATABASE template_db;`. If you want to use a deferent name for your database go to the file .env and change the database to whatever you like. Also in the .env file you can change the postgreSQL password to match what your postgreSQL is currently, as well as the postgreSQL user name.
+1. Start postgres with the command `sudo -i -u postgres` or `sudo -u postgres psql postgres`(make sure you have postgres installed in the device chosen to run this app)
+2. Create a role and database: from your terminal run the command `psql` then `CREATE ROLE labber LOGIN PASSWORD 'labber';` then `CREATE DATABASE template_db WITH OWNER = labber;`. If you want to use a deferent name for your database go to the file .env and change the database to whatever you like. Also in the .env file you can change the postgreSQL password to match what your postgreSQL is currently, as well as the postgreSQL user name.
 
 ## Setup
 1. Install server dependencies using the `npm install` command.
