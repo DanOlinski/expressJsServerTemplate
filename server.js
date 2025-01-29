@@ -5,10 +5,14 @@ const express = require('express');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 8000;
 const app = express();
+const cors = require("cors");
 
 app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));
+
+//this is to make it possible to run API requests using ajax. when a remote app does an Ajax request, the data sent back is not blocked by the cors protocol
+app.use(cors());
 
 //this is to handel data from HTML forms
 app.use(express.urlencoded({ extended: true }));
